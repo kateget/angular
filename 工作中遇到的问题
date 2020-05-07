@@ -1,0 +1,10 @@
+1.使用element-angular组件的时候会出现无法覆盖修改element样式
+解决：使用::ng-deep + 组件名
+例如：
+<el-cascader el-class="claimTypes" title="请选择病症" [options]="item.claimTypes"  (modelChange)="onChangeClaimType(item,claimItem)" [(ngModel)]="claimItem.lbtdm" [name]="'claimType'+this.policyReceiptsForClaims[n].applyLbtListParams[i].claimSeqno">
+</el-cascader>
+::ng-deep .claimTypes{
+  ul{
+    min-height: 347px !important;
+  }
+}
