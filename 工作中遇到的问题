@@ -8,3 +8,15 @@
     min-height: 347px !important;
   }
 }
+2.ExpressionChangedAfterItHasBeenCheckedError报错
+描述:由于数据改变后，没有刷新视图，导致报错，这个问题只有开发环境才有，因为生产环境正常，因为生产和开发代码检测不一样
+解决：
+在数据层：
+引入：
+import {ChangeDetectorRef} from '@angular/core';
+构造函数加入
+constructor(public cd: ChangeDetectorRef) {
+  }
+  
+在需要强制刷新的地方加入：
+this.cd.detectChanges();
