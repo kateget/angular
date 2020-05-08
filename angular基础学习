@@ -1,1 +1,7 @@
-
+1.组件创建
+默认会创建在app下
+ng g component components/home
+用这种方式创建的话，会默认在router里面引入路径
+2.开启服务
+ng serve --open
+3.
