@@ -4,4 +4,9 @@ ng g component components/home
 用这种方式创建的话，会默认在router里面引入路径
 2.开启服务
 ng serve --open
-3.
+3.循环
+*ngFor="let file of item.receiptFileList;index as k;
+4.判断
+*ngIf="isLoading"
+
+5.
