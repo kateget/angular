@@ -9,4 +9,18 @@ ng serve --open
 4.判断
 *ngIf="isLoading"
 
-5.
+5.跨组件共享数据与逻辑
+@Injectable()修饰器修饰的服务
+
+6.管道---格式化数据
+默认的管道有date，UpperCase，LowerCase
+管道的用法：<p>{{ birthday | date }}</p>
+自定义管道
+步骤：
+---确定需求
+---设计管道
+    路径：例如在src/app/common新建pipe文件夹，再创建comm.pipe.ts文件
+    自定义管道需要先引入@angular/core中的Pipe和PipeTransform
+---导出管道
+---使用管道
+参考文档：https://www.jianshu.com/p/fb3af0b918eb
