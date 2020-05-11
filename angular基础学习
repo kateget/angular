@@ -26,7 +26,7 @@ ng serve --open
 参考文档：https://www.jianshu.com/p/fb3af0b918eb
 7.内联模板/独立模板
 使用构造函数初始化属性
-
+(```)
 export class AppCtorComponent {
     title: string;
     myHero: string;
@@ -35,3 +35,4 @@ export class AppCtorComponent {
     this.myHero = 'Windstorm';
     }
 }
+(```)
