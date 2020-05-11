@@ -35,4 +35,4 @@ export class AppCtorComponent {
     this.myHero = 'Windstorm';
     }
 }
-(```)
+----------
